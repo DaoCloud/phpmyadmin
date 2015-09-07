@@ -46,7 +46,7 @@ if (isset($_POST['token']) && isset($_POST['uuid'])) {
     header('Location: ./index.php');
     exit();
 } else {
-    session_destroy($_SESSION);
+    session_destroy();
     header(sprintf('Location: %s', $redirect_uri));
 }
 ?>
