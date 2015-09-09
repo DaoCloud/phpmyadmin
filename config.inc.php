@@ -19,8 +19,8 @@ $cfg['blowfish_secret'] = 'SERTVVlEVVNZVURTSkhYSmR1c2l1ZGlzY2t4Y29zdXVhaXVkaWFkY
 $cfg['PmaNoRelation_DisableWarning'] = true;
 $cfg['ServerLibraryDifference_DisableWarning'] = true;
 
-$cfg['TitleDefault'] = 'DaoCloud | @PHPMYADMIN@'
-$cfg['TitleServer'] = 'DaoCloud | @VSERVER@ | @PHPMYADMIN@';
+$cfg['TitleDefault'] = 'DaoCloud | @PHPMYADMIN@';
+$cfg['TitleServer'] = 'DaoCloud | @VSERVER@ / @PHPMYADMIN@';
 
 /*
  * Servers configuration
