@@ -15,8 +15,12 @@
  * cookie
  */
 $cfg['blowfish_secret'] = 'SERTVVlEVVNZVURTSkhYSmR1c2l1ZGlzY2t4Y29zdXVhaXVkaWFkYQo='; /* YOU MUST FILL IN THIS FOR COOKIE AUTH! */
+
 $cfg['PmaNoRelation_DisableWarning'] = true;
-$cfg['TitleTable'] = 'DaoCloud / @DATABASE@';
+$cfg['ServerLibraryDifference_DisableWarning'] = true;
+
+$cfg['TitleDefault'] = 'DaoCloud | @PHPMYADMIN@'
+$cfg['TitleServer'] = 'DaoCloud | @VSERVER@ | @PHPMYADMIN@';
 
 /*
  * Servers configuration
