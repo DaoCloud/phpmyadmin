@@ -15,11 +15,14 @@
  * cookie
  */
 $cfg['blowfish_secret'] = 'SERTVVlEVVNZVURTSkhYSmR1c2l1ZGlzY2t4Y29zdXVhaXVkaWFkYQo='; /* YOU MUST FILL IN THIS FOR COOKIE AUTH! */
+$cfg['VersionCheck'] = false;
 
 $cfg['PmaNoRelation_DisableWarning'] = true;
+$cfg['SuhosinDisableWarning'] = true;
+$cfg['ReservedWordDisableWarning'] = true;
 $cfg['ServerLibraryDifference_DisableWarning'] = true;
 
-$cfg['TitleDefault'] = 'DaoCloud | @PHPMYADMIN@';
+$cfg['TitleDefault'] = 'DaoCloud | @PHPMYADMIN@' . @$_SESSION['PMA_single_signon_user'];
 $cfg['TitleServer'] = 'DaoCloud | @VSERVER@ / @PHPMYADMIN@';
 
 /*
