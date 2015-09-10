@@ -23,9 +23,9 @@ $cfg['SuhosinDisableWarning'] = true;
 $cfg['ReservedWordDisableWarning'] = true;
 $cfg['ServerLibraryDifference_DisableWarning'] = true;
 
-$cfg['TitleDefault'] = 'DaoCloud | phpMyAdmin';
-$cfg['TitleTable'] = 'DaoCloud / @DATABASE@ / @TABLE@ / phpMyAdmin';
-$cfg['TitleDatabase'] = 'DaoCloud / @DATABASE@ | phpMyAdmin';
+$cfg['TitleDefault'] = 'DaoCloud / @DAOSEVICE@ | phpMyAdmin';
+$cfg['TitleTable'] = 'DaoCloud / @DAOSEVICE@ / @TABLE@ / phpMyAdmin';
+$cfg['TitleDatabase'] = 'DaoCloud / @DAOSEVICE@ | phpMyAdmin';
 $cfg['TitleServer'] = 'DaoCloud | phpMyAdmin';
 
 /*
