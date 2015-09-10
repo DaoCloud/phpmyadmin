@@ -3275,7 +3275,7 @@ class PMA_Util
             '@TABLE@' => $vars['table'],
             '__TABLE__' => $vars['table'],
             '@PHPMYADMIN@' => $vars['phpmyadmin_version'],
-            '@DAOSEVICE@' => 'YourService',
+            '@DAOSEVICE@' => $_SESSION['dao_service_name'],
             );
 
         /* Optional escaping */

@@ -41,7 +41,7 @@ if (isset($_POST['token']) && isset($_POST['uuid'])) {
     $_SESSION['PMA_single_signon_password'] = $mysql_conf['password'];
     $_SESSION['PMA_single_signon_host'] = $mysql_conf['host'];
     $_SESSION['PMA_single_signon_port'] = $mysql_conf['port'];
-    $_SESSION['service_name'] = $service_info['service_instance_name'];
+    $_SESSION['DAO_service_name'] = $service_info['service_instance_name'];
     
     session_write_close();
     header('Location: ./index.php');

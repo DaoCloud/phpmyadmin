@@ -15,6 +15,7 @@ RUN rm -r /www && \
 ADD config.inc.php /www/
 ADD sso.php /www/
 ADD libraries/Util.class.php /www/libraries/Util.class.php
+ADD libraries/plugins/auth/AuthenticationSignon.class.php /www/libraries/plugins/auth/AuthenticationSignon.class.php
 
 RUN sed -i "s/http {/http {\n        client_max_body_size $MAX_UPLOAD;/" /etc/nginx/nginx.conf
 RUN sed -i "s/upload_max_filesize = 2M/upload_max_filesize = $MAX_UPLOAD/" /etc/php5/fpm/php.ini
