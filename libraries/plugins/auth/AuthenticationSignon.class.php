@@ -169,6 +169,9 @@ class AuthenticationSignon extends AuthenticationPlugin
             /* Get DaoCloud Service Name */
             if (isset($_SESSION['DAO_service_name'])) {
                 $dao_service_name = $_SESSION['DAO_service_name'];
+            } else {
+                /* Use null string default */
+                $dao_service_name = '';
             }
 
             /* End single signon session */
