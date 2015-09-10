@@ -22,8 +22,10 @@ $cfg['SuhosinDisableWarning'] = true;
 $cfg['ReservedWordDisableWarning'] = true;
 $cfg['ServerLibraryDifference_DisableWarning'] = true;
 
-$cfg['TitleDefault'] = 'DaoCloud';
-$cfg['TitleServer'] = 'DaoCloud | phpMyAdmin' . @$_SESSION['PMA_single_signon_user'];
+$cfg['TitleDefault'] = 'DaoCloud | phpMyAdmin';
+$cfg['TitleTable'] = 'DaoCloud / @DATABASE@ / @TABLE@ / phpMyAdmin';
+$cfg['TitleDatabase'] = 'DaoCloud / @VSERVER@ / @DATABASE@ | phpMyAdmin';
+$cfg['TitleServer'] = 'DaoCloud / @VSERVER@ | phpMyAdmin';
 
 /*
  * Servers configuration
