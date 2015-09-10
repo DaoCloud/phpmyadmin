@@ -26,7 +26,7 @@ $cfg['ServerLibraryDifference_DisableWarning'] = true;
 $cfg['TitleDefault'] = 'DaoCloud / @DAOSEVICE@ | phpMyAdmin';
 $cfg['TitleTable'] = 'DaoCloud / @DAOSEVICE@ / @TABLE@ / phpMyAdmin';
 $cfg['TitleDatabase'] = 'DaoCloud / @DAOSEVICE@ | phpMyAdmin';
-$cfg['TitleServer'] = 'DaoCloud | phpMyAdmin';
+$cfg['TitleServer'] = 'DaoCloud / @DAOSEVICE@ | phpMyAdmin';
 
 /*
  * Servers configuration
