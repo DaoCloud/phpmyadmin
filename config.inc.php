@@ -18,15 +18,18 @@
 $cfg['blowfish_secret'] = 'SERTVVlEVVNZVURTSkhYSmR1c2l1ZGlzY2t4Y29zdXVhaXVkaWFkYQo='; /* YOU MUST FILL IN THIS FOR COOKIE AUTH! */
 $cfg['VersionCheck'] = false;
 
+/* Disable all warning */
 $cfg['PmaNoRelation_DisableWarning'] = true;
 $cfg['SuhosinDisableWarning'] = true;
 $cfg['ReservedWordDisableWarning'] = true;
 $cfg['ServerLibraryDifference_DisableWarning'] = true;
 
-$cfg['TitleDefault'] = 'DaoCloud / @DAOSEVICE@ | phpMyAdmin';
-$cfg['TitleTable'] = 'DaoCloud / @DAOSEVICE@ / @TABLE@ / phpMyAdmin';
-$cfg['TitleDatabase'] = 'DaoCloud / @DAOSEVICE@ | phpMyAdmin';
-$cfg['TitleServer'] = 'DaoCloud / @DAOSEVICE@ | phpMyAdmin';
+
+/* Use `@DAOSERVICE@` to show service name */
+$cfg['TitleDefault'] = 'phpMyAdmin · DaoCloud';
+$cfg['TitleTable'] = 'phpMyAdmin · DaoCloud';
+$cfg['TitleDatabase'] = 'phpMyAdmin · DaoCloud';
+$cfg['TitleServer'] = 'phpMyAdmin · DaoCloud';
 
 /*
  * Servers configuration
