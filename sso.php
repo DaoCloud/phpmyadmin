@@ -7,9 +7,11 @@ $redirect_uri = 'https://dashboard.daocloud.io/services';
 session_name($session_name);
 session_start();
 
-if (isset($_POST['token']) && isset($_POST['uuid'])) {
+if (isset($_POST['token']) && isset($_POST['uuid']) && isset($_POST['org'])) {
     $uri = sprintf('https://api.daocloud.io/v1/service-instances/%s', $_POST['uuid']);
-    $auth_header = array(sprintf('Authorization: %s', $_POST['token']));
+    $auth_header = array(sprintf('Authorization: %s', $_POST['token']),
+                         sprintf('UserNameSpace: %s', $_POST['org'])
+                         );
     
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $uri);
