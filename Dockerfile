@@ -8,6 +8,8 @@ RUN ln -sf /dev/stdout /var/log/apache2/access.log && \
     ln -sf /dev/stderr /var/log/apache2/error.log
 
 ADD src/ /var/www/html/
+ADD 30-session.ini /etc/php5/apache2/conf.d/30-session.ini
+VOLUME ["/session"]
 
 EXPOSE 80
 CMD ["apachectl", "-DFOREGROUND"]
