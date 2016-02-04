@@ -7,4 +7,6 @@ RUN apt-get update && \
 
 ADD src/ /var/www/html/
 
+EXPOSE 80
+
 CMD ["apachectl", "-DFOREGROUND"]
