@@ -7,7 +7,7 @@ RUN apt-get update && \
 RUN ln -sf /dev/stdout /var/log/apache2/access.log && \
     ln -sf /dev/stderr /var/log/apache2/error.log
 
-ADD 000-default /etc/apache2/sites-available/000-default
+ADD 000-default.conf /etc/apache2/sites-available/000-default.conf
 ADD src/ /var/www/html/
 VOLUME ["/var/lib/php5/sessions"]
 
