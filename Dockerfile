@@ -21,6 +21,7 @@ RUN ln -sf /dev/stdout /var/log/apache2/access.log && \
 
 ADD 000-default.conf /etc/apache2/sites-available/000-default.conf
 ADD entrypoint.sh /usr/local/bin/entrypoint.sh
+ADD php.ini /etc/php5/apache2/php.ini
 ADD src/ /var/www/html/
 
 RUN chmod +x /usr/local/bin/entrypoint.sh
